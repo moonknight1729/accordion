@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hid{
+  font-size: 3em;
+  font-family: inherit;
+  border: none; 
+  background-color: #33ae74;
+  padding: 0.5em 0.75em;
+  display: none;
+  transition: background-color 0.5s ease-out,
+  dispaly 0.5s ease-out;
+  
+}
+
+.hid.unhid {
+  display: block;
+  background-color: #1ce;
+}
+
+
+</style>
+
+<body>
+  <button class="hid">Click me</button>
+
+  <script>
+    const button = document.querySelector('.hid') ;
+    button.addEventListener('click', ()=> button.classList.toggle('unhid'));
+  </script>
+
+</body>
+</html>
+
+

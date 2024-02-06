@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+:root {
+    /* colors */
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%);
+    /* font-weights */
+    --light: 400;
+    --medium: 600;
+    --bold: 700;
+}
+
+body {
+    background: var(--light-pink) url(./assets/images/background-pattern-desktop.svg) no-repeat;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
